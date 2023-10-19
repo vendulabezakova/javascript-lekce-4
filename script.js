@@ -1,3 +1,58 @@
+//Povinné domácí úkoly: 
+
+
+
+//ÚKOL Č. 1 - REGISTRACE NA OČKOVÁNÍ
+
+/*const fullname = prompt("Zadej své jméno:")
+const password = (prompt("Zadej heslo:"))
+const age = Number(prompt("Zadej svůj věk:"))
+
+
+if(age >= 65) {
+    document.body.innerHTML += "Věk je v pořádku"
+} else {
+    document.body.innerHTML += "Nízký věk"
+}
+
+if(password.length > 8) {
+    document.body.innerHTML += "Silné heslo"
+} else {
+    document.body.innerHTML += "Slabé heslo"
+}*/
+
+
+
+
+
+
+
+//ÚKOL Č. 2 CENA VSTUPENKY
+const age = Number(prompt("Zadej svůj věk:"))
+const plnaCena = 12
+
+if(age < 6) {
+    cena = 0
+} else if(age === 6) {
+    cena = plnaCena*0.65
+} else if(age < 27) {
+    cena = plnaCena*0.65
+} else if(age <= 27) {
+    cena = plnaCena
+} else if(age <= 64) {
+    cena = plnaCena
+} else {
+    cena = plnaCena/2
+}
+
+document.body.innerHTML += "Cena vstupenky je pro věk " + age + " let " + Math.round(cena) + " €."
+
+//---
+
+
+
+
+//CVIČENÍ
 /*const password = prompt("Zadej heslo.").length //zjištění délky textového řetězce
 
 document.body.innerHTML = password*/
@@ -108,40 +163,3 @@ if(znamka===1) {
 || (or) alespoň jedna strana musí platit*/
 
 
-//ÚKOL Č. 1 - REGISTRACE NA OČKOVÁNÍ
-/*const fullname = prompt("Zadej své jméno:")
-const password = (prompt("Zadej heslo:"))
-const age = Number(prompt("Zadej svůj věk:"))
-
-
-if(age >= 65) {
-    document.body.innerHTML += "Věk je v pořádku"
-} else {
-    document.body.innerHTML += "Nízký věk"
-}
-
-if(password.length > 8) {
-    document.body.innerHTML += "Silné heslo"
-} else {
-    document.body.innerHTML += "Slabé heslo"
-}*/
-
-//ÚKOL Č. 2 CENA VSTUPENKY
-const age = Number(prompt("Zadej svůj věk:"))
-const plnaCena = 12
-
-if(age < 6) {
-    cena = 0
-} else if(age === 6) {
-    cena = plnaCena*0.65
-} else if(age < 27) {
-    cena = plnaCena*0.65
-} else if(age <= 27) {
-    cena = plnaCena
-} else if(age <= 64) {
-    cena = plnaCena
-} else {
-    cena = plnaCena/2
-}
-
-document.body.innerHTML += "Cena vstupenky je pro věk " + age + " let " + Math.round(cena) + " €."

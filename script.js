@@ -24,9 +24,6 @@ if(password.length > 8) {
 
 
 
-
-
-
 //ÚKOL Č. 2 CENA VSTUPENKY
 const age = Number(prompt("Zadej svůj věk:"))
 const plnaCena = 12
@@ -45,7 +42,11 @@ if(age < 6) {
     cena = plnaCena/2
 }
 
-document.body.innerHTML += "Cena vstupenky je pro věk " + age + " let " + Math.round(cena) + " €."
+document.body.innerHTML = `
+<p style="font-size:32px">Cena vstupenky je pro věk ${age} let <span style="color:#A78AB7; font-weight:700"> ${Math.round(cena)} €</span>.</p>
+`
+
+/*document.body.innerHTML += "Cena vstupenky je pro věk " + age + " let " + Math.round(cena) + " €."*/
 
 //---
 

@@ -34,9 +34,7 @@ if(age < 6) {
     cena = plnaCena*0.65
 } else if(age < 27) {
     cena = plnaCena*0.65
-} else if(age <= 27) {
-    cena = plnaCena
-} else if(age <= 64) {
+} else if(age >= 27 && age <= 64) {
     cena = plnaCena
 } else {
     cena = plnaCena/2
